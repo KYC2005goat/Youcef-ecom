@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Minimalist Clothing Store Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart" id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-price">0</span></p>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="assets/social-icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/social-icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/social-icons/tiktok.png" alt="TikTok"></a>
+        </div>
+        <p>&copy; 2023 Minimalist Clothing Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Include EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>

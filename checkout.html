@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Minimalist Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "sd6n7C7kp18O5X_9E",
+       });
+    })();
+ </script>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Minimalist Clothing Store Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="#" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Checkout Form -->
+    <section class="checkout-form">
+        <h2 class="check">Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required class="inpCLASS">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required class="inpCLASS">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required class="inpCLASS">
+
+            <label for="address">Shipping Address</label>
+            <textarea id="address" name="address" rows="4" required class="inpCLASS"></textarea>
+
+            <h3>Order Summary</h3>
+            <div class="order-summary" id="order-summary">
+                <!-- Order items will be dynamically added here -->
+            </div>
+            <p class="total">Total: $<span id="order-total">0</span></p>
+
+            <button type="submit" class="checkout-btn">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="assets/social-icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/social-icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/social-icons/tiktok.png" alt="TikTok"></a>
+        </div>
+        <p>&copy; 2023 Minimalist Clothing Store. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Your custom JavaScript file -->
+    <script src="checkout.js"></script>
+</body>
+</html>

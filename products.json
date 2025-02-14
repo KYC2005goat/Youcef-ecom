@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Black Hoodie",
+        "price": 45,
+        "image": "assets/product1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Grey T-shirt",
+        "price": 25,
+        "image": "assets/product2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Blue Hoodie ",
+        "price": 30,
+        "image": "assets/product3.jpg"
+    }
+ 
+    
+]
